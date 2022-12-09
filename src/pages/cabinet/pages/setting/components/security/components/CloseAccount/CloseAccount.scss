@@ -1,0 +1,100 @@
+.close-account{
+  &__header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: inset 0px -1px 0px #F3F2F5;
+    padding: 16px;
+    background-color: #fff;
+    z-index: 100;
+  }
+  &__header-close{
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+      opacity: 0.6;
+    }
+  }
+  &__header-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__body{
+    padding: 95px 0;
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: space-between;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  &__container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__modal-wrap{
+    .ant-modal{
+      width: 100%;
+      max-width: initial;
+      max-height: initial;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 0;
+    }
+    .ant-modal-content{
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .ant-modal-body{
+      height: 100%;
+      padding: 0 0 40px;
+      overflow: hidden;
+    }
+  }
+  &__card-wrap{
+    max-width: 300px;
+  }
+  &__card-wrap{
+    display: flex;
+    align-items: flex-start;
+  }
+  &__bottom{
+    padding-top: 32px;
+  }
+  &__bottom-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__description{
+    padding: 28px;
+    background-color: #FBFBFC;
+    border: 1px dashed #EBEDF1;
+  }
+  &__footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 11px 0 10px;
+    box-shadow: inset 0px 1px 0px #F3F2F5;
+    background-color: #fff;
+    z-index: 100;
+  }
+  &__footer-container{
+    text-align: right;
+  }
+  &__label{
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 22px;
+    display: inline-block;
+  }
+  &__textarea{
+    max-height: 300px;
+  }
+}

@@ -1,0 +1,181 @@
+.footer {
+  width: 100%;
+
+  &__subscribe-text {
+    margin-top: 10px;
+  }
+
+  &__date {
+    margin-top: 20px;
+  }
+
+  &__social-top {
+    margin-top: 40px;
+  }
+
+  &__social-bottom {
+    order: 4;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 320px) {
+  .footer {
+    margin-bottom: 20px;
+
+    &__info {
+      order: 1;
+    }
+
+    &__nav {
+      order: 3;
+      margin-top: 40px;
+    }
+
+    &__subscribe {
+      order: 2;
+      margin-top: 40px;
+    }
+
+    &__wrapper {
+      margin-top: 10px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    margin-bottom: 30px;
+
+    &__info {
+      order: 1;
+    }
+
+    &__nav {
+      order: 3;
+      margin-top: 40px;
+    }
+
+    &__subscribe {
+      order: 2;
+      margin-top: 0;
+    }
+
+    &__wrapper {
+      margin-top: 20px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .footer {
+    margin-bottom: 30px;
+
+    &__info {
+      order: 1;
+    }
+
+    &__nav {
+      order: 2;
+      margin-top: 0;
+    }
+
+    &__subscribe {
+      order: 3;
+    }
+
+    &_date {
+      margin-top: 20px;
+    }
+
+    &__social-top {
+      margin-top: 40px;
+    }
+
+    &__wrapper {
+      margin-top: 20px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    margin-bottom: 40px;
+
+    &__info {
+      order: 1;
+    }
+
+    &__nav {
+      order: 2;
+    }
+
+    &__subscribe {
+      order: 3;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer {
+    margin-bottom: 40px;
+
+    &__info {
+      order: 1;
+    }
+
+    &__nav {
+      order: 2;
+    }
+
+    &__subscribe {
+      order: 3;
+    }
+
+    &_date {
+      margin-top: 20px;
+    }
+
+    &__social-top {
+      margin-top: 40px;
+    }
+
+    &__wrapper {
+      margin-top: 40px;
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .footer {
+    margin-bottom: 50px;
+
+    &.absolute {
+      position: absolute;
+      left: 0;
+    }
+
+    &__info {
+      order: 1;
+    }
+
+    &__nav {
+      order: 2;
+    }
+
+    &__subscribe {
+      order: 3;
+    }
+
+    &_date {
+      margin-top: 20px;
+    }
+
+    &__social-top {
+      margin-top: 40px;
+    }
+
+    &__wrapper {
+      margin-top: 40px;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.faq{
+  &__text{
+    color: #595674;
+    font-size: (20rem / 16);
+    line-height: (30rem / 16);
+  }
+  .button{
+    margin-top: 0px !important;
+  }
+  &__container{
+    position: relative;
+    z-index: 100;
+    width: initial;
+  }
+  &__container{
+    margin-top: -56px;
+  }
+  &__head-area{
+    padding-left: 20px;
+    padding-right: 20px;
+    &-text{
+      padding-bottom: 130px;
+    }
+  }
+  &__panel{
+    padding: 30px 38px 30px 44px;
+    border-radius: 16px !important;
+    box-shadow: 0px 4px 16px rgba(104, 96, 160, 0.09);
+    margin: 0 0 26px;
+    h4{
+      padding-right: 40px;
+    }
+    .ant-collapse-header{
+      padding: 0 !important;
+    }
+    .ant-collapse-content-box{
+      padding-left: 0 !important;
+      padding-bottom: 0 !important;
+    }
+    .chevron-icon{
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: 0.3s ease-in;
+    }
+    &.ant-collapse-item-active .chevron-icon{
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .faq{
+    &__panel {
+      .typography.title-36 {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .faq{
+    &__col{
+      flex: 0 0 280px;
+    }
+    &__head-area-text{
+      margin-top: 28px;
+      padding-bottom: 91px;
+    }
+    &__panel{
+      padding: 24px 16px 24px 18px;
+      margin: 0 0 16px;
+      .typography.text-20{
+        font-size: 14px;
+        line-height: 21px;
+      }
+      .chevron-icon{
+        right: 4px;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .faq{
+    &__col{
+      flex: 0 0 690px;
+    }
+    &__head-area-text{
+      margin-top: 30px;
+      padding-bottom: 113px;
+    }
+    &__panel{
+      padding: 32px 44px 32px 44px;
+      margin: 0 0 28px;
+      .typography.text-20{
+        font-size: 16px;
+        line-height: 27px;
+      }
+      .chevron-icon{
+        right: 0px;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .faq{
+    &__col{
+      flex: 0 0 821px;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .faq{
+    &__head-area-text{
+      margin-top: 28px;
+      padding-bottom: 115px;
+    }
+    &__panel {
+      .typography.text-20{
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .faq{
+    &__head-area-text{
+      margin-top: 34px;
+      padding-bottom: 130px;
+    }
+    &__col{
+      flex: 0 0 930px;
+    }
+  }
+}

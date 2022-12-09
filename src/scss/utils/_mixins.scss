@@ -1,0 +1,196 @@
+//Fonts
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+// Size
+@mixin size ($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin position ($top, $left, $right: none, $bottom: none) {
+  top: $top;
+  left: $left;
+
+  @if ($right != none) {
+    right: $right;
+  }
+
+  @if ($bottom != none) {
+    bottom: $bottom;
+  }
+}
+
+// Core screen
+@mixin screenFull ($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content
+  }
+}
+
+@mixin screenMax ($max) {
+  @media (max-width: $max) {
+    @content
+  }
+}
+
+@mixin screenMin ($min) {
+  @media (min-width: $min) {
+    @content
+  }
+}
+
+@mixin screenMaxH ($max) {
+  @media (max-height: $max) {
+    @content
+  }
+}
+
+// Most popular screen
+@mixin screenMobile ($type: full, $min: 320px, $max: 767px) {
+
+  @if ($type == full) {
+    @include screenFull($min, $max) {
+      @content
+    }
+  }
+
+  @if ($type == max) {
+    @include screenMax($max) {
+      @content
+    }
+  }
+
+  @if ($type == min) {
+    @include screenMin($min) {
+      @content
+    }
+  }
+}
+
+@mixin screenTab ($type: full, $min: 768px, $max: 1024px) {
+
+  @if ($type == full) {
+    @include screenFull($min, $max) {
+      @content
+    }
+  }
+
+  @if ($type == max) {
+    @include screenMax($max) {
+      @content
+    }
+  }
+
+  @if ($type == min) {
+    @include screenMin($min) {
+      @content
+    }
+  }
+}
+
+@mixin screenLaptop ($type: full, $min: 1024px, $max: 1440px) {
+
+  @if ($type == full) {
+    @include screenFull($min, $max) {
+      @content
+    }
+  }
+
+  @if ($type == max) {
+    @include screenMax($max) {
+      @content
+    }
+  }
+
+  @if ($type == min) {
+    @include screenMin($min) {
+      @content
+    }
+  }
+}
+
+@mixin screenDesktop ($type: full, $min: 1440px, $max: 2560px) {
+
+  @if ($type == full) {
+    @include screenFull($min, $max) {
+      @content
+    }
+  }
+
+  @if ($type == max) {
+    @include screenMax($max) {
+      @content
+    }
+  }
+
+  @if ($type == min) {
+    @include screenMin($min) {
+      @content
+    }
+  }
+}
+
+@mixin styleAllScreen($style , $XXL: null, $XL: null, $LG: null, $MD: null, $SM: null, $XL: null, $in: false) {
+  @media (min-width: 320px) {
+    @if ($XL != null) {
+      @if ($in) {
+        #{$style}: $XL !important;
+      } @else {
+        #{$style}: $XL;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    @if ($SM != null) {
+      @if ($in) {
+        #{$style}: $SM !important;
+      } @else {
+        #{$style}: $SM;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    @if ($MD != null) {
+      @if ($in) {
+        #{$style}: $MD !important;
+      } @else {
+        #{$style}: $MD;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    @if ($LG != null) {
+      @if ($in) {
+        #{$style}: $LG !important;
+      } @else {
+        #{$style}: $LG;
+      }
+    }
+  }
+  @media (min-width: 1440px) {
+    @if ($XL != null) {
+      @if ($in) {
+        #{$style}: $XL !important;
+      } @else {
+        #{$style}: $XL;
+      }
+    }
+  }
+  @media (min-width: 1600px) {
+    @if ($XXL != null) {
+      @if ($in) {
+        #{$style}: $XXL !important;
+      } @else {
+        #{$style}: $XXL;
+      }
+    }
+  }
+}

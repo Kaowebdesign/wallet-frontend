@@ -1,0 +1,49 @@
+@import "~scss/utils/_var";
+
+.cabinet {
+  height: 100vh;
+
+  &__content-wrapper {
+    background-color: $cBgCabinet;
+  }
+
+  &__content {
+    display: flex;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      flex: auto;
+
+      &_main {
+        flex-grow: 1;
+        margin: 24px 24px 0;
+        max-width: calc(100vw - 256px);
+        transition: max-width .19s;
+
+        &.width {
+          background-color: $cDefault;
+          padding: 24px;
+        }
+        &.transparent {
+          background-color: transparent;
+        }
+      }
+
+      &_main.close_sider {
+        max-width: calc(100vw - 127px);
+        transition: max-width .19s;
+      }
+    }
+  }
+
+  &__footer {
+    padding: 35px 50px 16px 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

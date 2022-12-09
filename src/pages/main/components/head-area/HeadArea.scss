@@ -1,0 +1,404 @@
+.head-area {
+  position: relative;
+  overflow: hidden;
+
+  &__charts-img {
+    position: absolute;
+    z-index: 99;
+  }
+
+  &__wallet-img {
+    position: absolute;
+    z-index: 99;
+  }
+
+  &__chart-img {
+    position: absolute;
+    z-index: 99;
+  }
+
+  &__coins-img {
+    position: absolute;
+    z-index: 99;
+  }
+
+  &__elements-img {
+    position: absolute;
+    z-index: 99;
+  }
+
+  &__grid-img {
+   position: absolute;
+  }
+
+  &__btn {
+    width: 190px !important;
+  }
+}
+
+@media (min-width: 320px) {
+  .head-area {
+
+    &__title-top {
+      margin-top: 0 !important;
+    }
+
+    &__text {
+      margin-top: 20px !important;
+    }
+
+    &__btn {
+      margin-top: 25px;
+    }
+
+    &__area {
+      height: 300px;
+    }
+
+    &__grid-img {
+      left: 50px;
+      top: calc(100% - 300px);
+      width: 320px;
+      height: 284px;
+    }
+
+    &__charts-img {
+      width: 133.08px;
+      height: 136.74px;
+      top: 0;
+      left: 180px;
+    }
+
+    &__wallet-img {
+      width: 105.5px;
+      height: 77.57px;
+      top: 180px;
+      left: 175px;
+    }
+
+    &__chart-img {
+      width: 94.12px;
+      height: 112.2px;
+      top: 110px;
+      left: 50px;
+    }
+
+    &__coins-img {
+      width: 56.91px;
+      height: 61.36px;
+      top: 100px;
+      left: 165px;
+    }
+
+    &__elements-img {
+      width: 31.52px;
+      height: 24.98px;
+      top: 85px;
+      left: 90px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .head-area {
+
+    &__title-top {
+      margin-top: 40px !important;
+    }
+
+    &__text {
+      margin-top: 20px !important;
+    }
+
+    &__btn {
+      margin-top: 40px;
+    }
+
+    &__area {
+      height: 550px;
+    }
+
+    &__grid-img {
+      left: 30px;
+      top: calc(100% - 550px);
+      width: 650px;
+      height: 570px;
+    }
+
+    &__charts-img {
+      width: 270.31px;
+      height: 277.33px;
+      top: 0;
+      left: 330px;
+    }
+
+    &__wallet-img {
+      width: 214.3px;
+      height: 157.33px;
+      top: 360px;
+      left: 340px;
+    }
+
+    &__chart-img {
+      width: 191.18px;
+      height: 227.56px;
+      top: 225px;
+      left: 85px;
+    }
+
+    &__coins-img {
+      width: 115.6px;
+      height: 131.13px;
+      top: 225px;
+      left: 315px;
+    }
+
+    &__elements-img {
+      width: 64.02px;
+      height: 50.67px;
+      top: 170px;
+      left: 180px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .head-area {
+
+    &__title-top {
+      margin-top: 40px !important;
+    }
+
+    &__text {
+      margin-top: 20px !important;
+    }
+
+    &__area {
+      height: 550px;
+    }
+
+    &__grid-img {
+      left: 100px;
+      top: calc(100% - 550px);
+      width: 650px;
+      height: 570px;
+    }
+
+    &__btn {
+      margin-top: 40px;
+    }
+
+    &__grid-img {
+
+    }
+
+    &__charts-img {
+      width: 270.31px;
+      height: 277.33px;
+      top: 0;
+      left: 420px;
+    }
+
+    &__wallet-img {
+      width: 214.3px;
+      height: 157.33px;
+      top: 360px;
+      left: 415px;
+    }
+
+    &__chart-img {
+      width: 191.18px;
+      height: 227.56px;
+      top: 225px;
+      left: 160px;
+    }
+
+    &__coins-img {
+      width: 115.6px;
+      height: 131.13px;
+      top: 195px;
+      left: 390px;
+    }
+
+    &__elements-img {
+      width: 64.02px;
+      height: 50.67px;
+      top: 170px;
+      left: 255px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .head-area {
+    &__text {
+      margin-top: 22px !important;
+    }
+
+    &__title-top {
+      margin-top: 60px !important;
+    }
+
+    &__area {
+      height: 550px;
+    }
+
+    &__btn {
+      margin-top: 50px;
+    }
+
+    &__grid-img {
+      left: 100px;
+      top: calc(100% - 550px);
+      width: 650px;
+      height: 570px;
+    }
+
+    &__charts-img {
+      width: 270.31px;
+      height: 277.33px;
+      top: 0;
+      left: 420px;
+    }
+
+    &__wallet-img {
+      width: 214.3px;
+      height: 157.33px;
+      top: 360px;
+      left: 415px;
+    }
+
+    &__chart-img {
+      width: 191.18px;
+      height: 227.56px;
+      top: 225px;
+      left: 160px;
+    }
+
+    &__coins-img {
+      width: 115.6px;
+      height: 131.13px;
+      top: 195px;
+      left: 390px;
+    }
+
+    &__elements-img {
+      width: 64.02px;
+      height: 50.67px;
+      top: 170px;
+      left: 255px;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .head-area {
+    margin-top: 150px;
+
+    &__title-top {
+      margin-top: 60px !important;
+    }
+
+    &__text {
+      margin-top: 22px !important;
+    }
+
+    &__btn {
+      margin-top: 50px;
+      margin-bottom: 300px;
+    }
+
+    &__grid-img {
+      top: 0;
+      left: 40%;
+      width: 731px;
+      height: 648px;
+    }
+
+    &__charts-img {
+      width: 304px;
+      height: 312px;
+      left: 245px;
+    }
+
+    &__wallet-img {
+      width: 241px;
+      height: 177px;
+      top: 400px;
+      left: 250px;
+    }
+
+    &__chart-img {
+      width: 215px;
+      height: 256px;
+      top: 245px;
+      left: -40px;
+    }
+
+    &__coins-img {
+      width: 130px;
+      height: 140px;
+      top: 230px;
+      left: 200px;
+    }
+
+    &__elements-img {
+      width: 72px;
+      height: 57px;
+      top: 190px;
+      left: 50px;
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .head-area {
+    margin-top: 150px;
+
+    &__title-top {
+      margin-top: 80px !important;
+    }
+
+    &__text  {
+      margin-top: 28px !important;
+    }
+
+    &__btn {
+      margin-top: 45px;
+      margin-bottom: 400px;
+    }
+
+    &__grid-img {
+      top: 0;
+      left: 40%;
+      width: 927px;
+      height: 821px;
+    }
+
+    &-area {
+      position: relative;
+    }
+
+    &__charts-img {
+      top: 0;
+      left: 340px;
+    }
+
+    &__wallet-img {
+      top: 530px;
+      left: 320px;
+    }
+
+    &__chart-img {
+      top: 300px;
+      left: 0;
+    }
+
+    &__coins-img {
+      width: 164px;
+      height: 177px;
+      top: 290px;
+      left: 330px;
+    }
+
+    &__elements-img {
+      top: 240px;
+      left: 85px;
+    }
+  }
+}

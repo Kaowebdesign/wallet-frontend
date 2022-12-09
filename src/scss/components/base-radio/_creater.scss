@@ -1,0 +1,20 @@
+@import "../parentComponent/creator";
+
+@import "vars";
+@import "maker";
+
+.base-radio {
+  margin: 0 !important;
+  &__button{
+    color: $cPrimary !important;
+    border-color: #E0E0E5 !important;
+    &.ant-radio-button-wrapper-checked{
+      color: $cSecondary !important;
+      border-color: $cSecondary !important;
+      z-index: 100;
+      &::before{
+        background-color: $cSecondary !important;
+      }
+    }
+  }
+}

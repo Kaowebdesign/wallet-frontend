@@ -1,0 +1,15 @@
+.news-sk-full{
+  display: flex;
+  &__left{
+    flex: 1;
+  }
+  &__image{
+    display: block;
+    width: 100% !important;
+    min-height: 304px;
+    border-radius: 8px;
+  }
+  &__content{
+    flex: 2;
+  }
+}

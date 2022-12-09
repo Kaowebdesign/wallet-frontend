@@ -1,0 +1,124 @@
+@import "../parentComponent/creator";
+
+@import "vars";
+@import "maker";
+
+.base-table{
+
+  .ant-table {
+    color: $cTable;
+    transition: .3s;
+  }
+  &__icon-wrap{
+    display: flex;
+    align-items: center;
+  }
+  &__icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  .ant-table-thead > tr > th{
+    border-top: 1px solid #F3F2F5;
+  }
+  .ant-table-thead > tr > th,
+  .ant-table-summary > tr > td {
+    background: #FBFBFC;
+    border-radius: 0;
+    border-bottom: 0;
+  }
+  &.base-table__portfolio{
+    //tbody tr:last-child{
+    //  td{
+    //    border-bottom: 0;
+    //  }
+    //}
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td,
+    .ant-table-summary > tr > td {
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4){
+        text-align: right !important;
+      }
+    }
+  }
+  &.base-table__wallets{
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td,
+    .ant-table-summary > tr > td {
+      &:nth-child(2),
+      &:nth-child(3){
+        text-align: right !important;
+      }
+    }
+  }
+
+  .ant-table-thead > tr > th {
+    color: $cTableHeader;
+    transition: .3s;
+  }
+
+  .ant-pagination-item-active {
+    border-color: $cSecondary;
+
+    a {
+      color: $cSecondary;
+    }
+  }
+
+  .ant-pagination-item:focus,
+  .ant-pagination-item:hover {
+    border-color: $cSecondary;
+
+    a {
+      color: $cSecondary;
+    }
+  }
+
+  .ant-pagination-prev:not(.ant-pagination-disabled):hover .ant-pagination-item-link,
+  .ant-pagination-next:not(.ant-pagination-disabled):hover .ant-pagination-item-link {
+    border-color: $cSecondary;
+    color: $cSecondary;
+  }
+
+  .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-link-icon,
+  .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-link-icon {
+    color: $cSecondary;
+  }
+
+  .ant-select-selection-item {
+    padding-left: 15px !important;
+    padding-right: 35px !important;
+  }
+
+  .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+    border-color: $cSecondary;
+  }
+
+  .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    box-shadow: 0 0 2px rgba($cSecondary, .1);
+  }
+
+  .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-color: $cSecondary;
+    box-shadow: 0 0 2px rgba($cSecondary, .1);
+  }
+
+  .ant-spin-dot-item {
+    background-color: $cSecondary;
+  }
+
+  .ant-table-body {
+    overflow-y: auto !important;
+  }
+  .ant-table-column-sorter-down.active,
+  .ant-table-column-sorter-up.active {
+    color: $cSecondary;
+  }
+
+  .ant-table-row-expand-icon:focus,
+  .ant-table-row-expand-icon:hover {
+    color: $cSecondary;
+  }
+}

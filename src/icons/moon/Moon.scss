@@ -1,0 +1,9 @@
+.moon {
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+
+  &.disabled {
+    pointer-events: none;
+  }
+}

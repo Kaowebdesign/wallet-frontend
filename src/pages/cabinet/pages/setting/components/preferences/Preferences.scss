@@ -1,0 +1,17 @@
+.cab-settings{
+  &__title-wrap{
+    margin-bottom: 24px;
+  }
+  &__label{
+    margin-bottom: 8px;
+  }
+  &__item{
+    margin-bottom: 32px;
+  }
+  &__select{
+    .ant-select-selection-item{
+      padding: 0px 12px !important;
+      height: 32px;
+    }
+  }
+}

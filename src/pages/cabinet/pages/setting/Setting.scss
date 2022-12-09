@@ -1,0 +1,113 @@
+.setting{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cab-settings{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  &__wrap{
+    max-width: 320px;
+  }
+  &__icon{
+    background: transparent;
+    border: none;
+    color: #4b42b0;
+    &:hover,
+    &:active,
+    &:focus{
+      border: none;
+      color: #4b42b0;
+      background: transparent;
+    }
+  }
+  &__input{
+    width: 320px
+  }
+  &__title-wrap{
+    margin-bottom: 24px;
+  }
+  &__title-flex{
+    display: flex;
+    align-items: center;
+  }
+  &__label{
+    margin-bottom: 8px;
+  }
+  &__item{
+    margin-bottom: 32px;
+  }
+  &__select{
+    .ant-select-selection-item{
+      padding: 0px 12px !important;
+      height: 32px;
+    }
+  }
+  &__cancel{
+    margin-right: 20px;
+    color: #332E54 !important;
+  }
+  &__closeacc-title{
+    margin-bottom: 16px;
+  }
+  &__closeacc-modal{
+    .ant-modal-body{
+      text-align: center;
+    }
+  }
+  &__closeacc-btns{
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__closeacc-button{
+    flex: 1;
+  }
+  &__error-img{
+    margin-bottom: 28px;
+  }
+  &__auth-cards{
+    margin-bottom: 32px;
+  }
+  &__twofa-modal{
+    max-width: 450px !important;
+  }
+  &__skeleton-input{
+    position: relative;
+    max-width: 320px;
+    width: 100% !important;
+  }
+}
+.cab-security{
+  &__wrap{
+    max-width: 320px;
+  }
+}
+.auth-card{
+  display: flex;
+  padding: 16px 20px;
+  border: 1px solid #E0E0E5;
+  &__content{
+    padding-left: 16px;
+  }
+  &__title{
+    margin-bottom: 8px;
+  }
+  &__description{
+    margin-bottom: 16px;
+  }
+}
+.twofa{
+  &__qr{
+   width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 32px 0;
+  }
+  &__qr-box{
+    padding: 20px;
+    border: 1px solid #E0E0E5;
+    border-radius: 2px;
+  }
+}

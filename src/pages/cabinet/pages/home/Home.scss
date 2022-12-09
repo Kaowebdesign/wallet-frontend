@@ -1,0 +1,32 @@
+.cab-home{
+  width: 100%;
+  &__bottom{
+    margin-top: 25px;
+    display: flex;
+  }
+}
+.home-card{
+  background: #fff;
+  border-radius: 2px;
+  flex: 1;
+  &_portfolio{
+    margin-right: 13px !important;
+  }
+  &_transactions{
+    margin-left: 13px !important;
+  }
+  &__header{
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: inset 0px -1px 0px #F3F2F5;
+    h1{
+      margin: 0;
+    }
+  }
+  &__body{
+  }
+  &__error{
+    padding: 24px 0;
+  }
+}

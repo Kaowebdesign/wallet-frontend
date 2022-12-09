@@ -1,0 +1,166 @@
+@import "~scss/utils/_var";
+
+.auth {
+  position: relative;
+
+  &__content {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+
+
+  &__logo-wrapper {
+    padding-top: 33px;
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__content {
+    height: 100%;
+  }
+
+  &_leptop {
+    position: absolute;
+    z-index: 99;
+  }
+}
+//
+@media (min-width: 320px) {
+  .auth {
+    height: auto;
+
+    &__wrapper {
+      align-items: center;
+    }
+
+    &_leptop {
+      display: none;
+    }
+
+    &__backing {
+      display: none;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .auth {
+    height: 100vh;
+
+    &__wrapper {
+      align-items: center;
+    }
+
+    &_leptop {
+      display: none;
+    }
+
+    &__backing {
+      display: none;
+    }
+
+  }
+}
+@media (min-width: 992px) {
+  .auth {
+
+    &__wrapper {
+      align-items: center;
+    }
+
+    &_leptop {
+      display: none;
+    }
+
+    &__backing {
+      display: none;
+    }
+
+  }
+}
+@media (min-width: 1200px) {
+  .auth {
+
+    &__wrapper {
+      align-items: center;
+    }
+
+    &_leptop {
+      display: none;
+    }
+
+    &__backing {
+      display: none;
+    }
+
+  }
+}
+@media (min-width: 1440px) {
+  .auth {
+
+    &_leptop {
+      display: block;
+      width: 569px;
+      height: 630px;
+      left: calc(100% - 569px);
+      top: calc(50% - 295px);
+    }
+
+    &__backing {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: calc(100% - 610px);
+      width: 610px;
+      height: 100vh;
+      background-color: $cSecondary;
+    }
+
+    &__wrapper {
+      align-items: flex-start;
+    }
+  }
+
+}
+@media (min-width: 1600px) {
+  .auth {
+    &_leptop {
+      width: 769px;
+      height: 830px;
+      left: calc(100% - 769px);
+      top: calc(50% - 385px);
+    }
+
+    &_leptop-show {
+      animation: XX .5s;
+    }
+
+    &__backing {
+      position: absolute;
+      top: 0;
+      left: calc(100% - 825px);
+      width: 825px;
+      height: 100vh;
+      background-color: $cSecondary;
+    }
+
+    &__wrapper {
+      align-items: flex-start;
+    }
+  }
+}
+
+@keyframes XX {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: calc(100% - 769px);
+  }
+}

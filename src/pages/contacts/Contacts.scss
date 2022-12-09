@@ -1,0 +1,114 @@
+@import "~scss/utils/_var";
+
+.contacts {
+
+  &__title-span {
+    color: $cSecondary;
+  }
+
+  &__mail, &__call {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  &__form {
+    background-color: $cBgPrimary;
+    padding: 60px 90px;
+    border-radius: 22px;
+  }
+}
+
+@media (min-width: 320px) {
+  .contacts {
+    margin-top: 50px;
+
+    &__form {
+      margin-top: 50px;
+      padding: 0 16px 30px;
+    }
+
+    &__text {
+      margin-top: 20px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .contacts {
+    margin-top: 60px ;
+
+    &__form {
+      margin-top: 70px;
+      padding: 30px 60px 60px;
+    }
+
+    &__text {
+      margin-top: 20px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .contacts {
+    margin-top: 60px;
+
+    &__form {
+      margin-top: 70px;
+      padding: 30px 60px 60px;
+    }
+
+    &__text {
+      margin-top: 20px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .contacts {
+    margin-top: 120px;
+
+    &__form {
+      padding: 10px 50px 30px ;
+    }
+
+    &__title {
+      margin-top: 0;
+    }
+
+    &__text {
+      margin-top: 24px;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .contacts {
+    margin-top: 40px;
+
+    &__form {
+      padding: 10px 50px 30px ;
+    }
+
+    &__title {
+      margin-top: 30px;
+    }
+
+    &__text {
+      margin-top: 24px;
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .contacts {
+    margin-top: 70px;
+
+    &__form {
+      padding: 30px 90px 60px;
+    }
+
+    &__title {
+      margin-top: 30px;
+    }
+
+    &__text {
+      margin-top: 28px;
+    }
+  }
+}

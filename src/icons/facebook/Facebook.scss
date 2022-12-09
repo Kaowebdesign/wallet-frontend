@@ -1,0 +1,9 @@
+.facebook {
+  opacity: 1;
+  transition: .3s;
+
+  &:hover, &:focus {
+    opacity: .8;
+    transition: .3s;
+  }
+}

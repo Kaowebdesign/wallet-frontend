@@ -1,0 +1,14 @@
+.header-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 38px;
+
+  &__btn {
+    width: 82px !important;
+    height: 32px !important;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

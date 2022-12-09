@@ -1,0 +1,15 @@
+.cab-notifications{
+  &__wrap{
+    max-width: 354px;
+  }
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  &__switch{
+    &.ant-switch-checked{
+      background-color: #554CC2 !important;
+    }
+  }
+}

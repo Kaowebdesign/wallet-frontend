@@ -1,0 +1,277 @@
+@import "~scss/utils/_var";
+
+.news {
+
+  &__head-area {
+    background-color: $cBgPrimary;
+  }
+
+  &__title-span {
+    color: $cSecondary !important;
+  }
+
+  &__head-area-wrapper {
+    margin: 0 auto;
+  }
+
+  &__input {
+    input {
+      border-color: white;
+    }
+  }
+
+  &__tabs {
+    padding: 0 0 30px !important;
+    .ant-tabs-nav::before {
+      border: none !important;
+    }
+
+    .ant-tabs-ink-bar {
+      height: 5px !important;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .ant-tabs-nav-wrap::after, .ant-tabs-nav-wrap::before {
+      box-shadow: none !important;
+    }
+  }
+
+  &__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+@media (min-width: 320px) {
+  .news {
+
+    &__head-area {
+      padding-top: 55px;
+    }
+
+    &__head-area-wrapper {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    &__head-area-text {
+      margin-top: 20px;
+    }
+
+
+    &__form {
+      padding-top: 30px !important;
+      padding-bottom: 80px !important;
+    }
+
+    &__container {
+      margin-top: -56px !important;
+    }
+
+    &__item-wrapper {
+      margin-top: 30px !important;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .news {
+
+    &__head-area {
+      padding-top: 120px;
+    }
+
+    &__head-area-wrapper {
+      width: 445px;
+      padding: 0;
+    }
+
+    &__head-area-text {
+      margin-top: 30px;
+    }
+
+    &__form {
+      padding-top: 45px !important;
+      padding-bottom: 100px !important;
+    }
+
+    .ant-input {
+      border-top-right-radius: 4px !important;
+      border-bottom-right-radius: 4px !important;
+    }
+
+    .left-radius {
+      width: 160px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    &__container {
+      margin-top: -56px !important;
+    }
+
+    &__item-wrapper {
+      margin-top: 40px !important;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .news {
+
+    &__head-area {
+      padding-top: 120px;
+    }
+
+    &__head-area-wrapper {
+      width: 445px;
+    }
+
+    &__head-area-text {
+      margin-top: 30px;
+    }
+
+    &__form {
+      padding-top: 45px !important;
+      padding-bottom: 100px !important;
+    }
+
+    .ant-input {
+      border-top-right-radius: 4px !important;
+      border-bottom-right-radius: 4px !important;
+    }
+
+    .left-radius {
+      width: 160px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    &__container {
+      margin-top: -56px !important;
+    }
+
+    &__item-wrapper {
+      margin-top: 40px !important;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .news {
+
+    &__head-area {
+      padding-top: 105px;
+    }
+
+    &__head-area-wrapper {
+      width: 485px;
+    }
+
+    &__head-area-text {
+      margin-top: 40px;
+    }
+
+    &__form {
+      padding-top: 45px !important;
+      padding-bottom: 100px !important;
+    }
+
+    .ant-input {
+      border-top-right-radius: 4px !important;
+      border-bottom-right-radius: 4px !important;
+    }
+
+    .left-radius {
+      width: 160px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    &__container {
+      margin-top: -64px !important;
+    }
+
+    &__item-wrapper {
+      margin-top: 40px !important;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .news {
+
+    &__head-area {
+      padding-top: 105px;
+    }
+
+    &__head-area-wrapper {
+      width: 485px;
+    }
+
+    &__head-area-text {
+      margin-top: 40px;
+    }
+
+    &__form {
+      padding-top: 45px !important;
+      padding-bottom: 100px !important;
+    }
+
+    .ant-input {
+      border-top-right-radius: 4px !important;
+      border-bottom-right-radius: 4px !important;
+    }
+
+    .left-radius {
+      width: 160px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    &__container {
+      margin-top: -64px !important;
+    }
+
+    &__item-wrapper {
+      margin-top: 40px !important;
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .news {
+
+    &__head-area {
+      padding-top: 105px;
+    }
+
+    &__head-area-wrapper {
+      width: 530px;
+    }
+
+    &__head-area-text {
+      margin-top: 40px;
+    }
+
+    &__form {
+      padding-top: 45px !important;
+      padding-bottom: 110px !important;
+    }
+
+    .ant-input {
+      border-top-right-radius: 4px !important;
+      border-bottom-right-radius: 4px !important;
+    }
+
+    .left-radius {
+      width: 180px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    &__container {
+      margin-top: -62px !important;
+    }
+
+    &__item-wrapper {
+      margin-top: 50px!important;
+    }
+  }
+}

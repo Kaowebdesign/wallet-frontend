@@ -1,0 +1,13 @@
+@import "../parentComponent/creator";
+
+@import "vars";
+@import "maker";
+
+.ant-card{
+  border: 1px solid #EBEDF1;
+  box-sizing: border-box;
+  border-radius: 2px;
+  .ant-card-body{
+    padding: 0 !important;
+  }
+}

@@ -1,0 +1,80 @@
+@import "~scss/utils/_var";
+
+.subscribe-form {
+
+  &__input {
+    margin-top: 15px;
+
+    input {
+      color: $cPrimary;
+      border-color: $cPrimary;
+      font-size: 16px;
+    }
+
+    .ant-input-group-addon {
+      padding: 0;
+      border: none;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .subscribe-form {
+
+    &__input {
+      width: 320px !important;
+
+      input {
+        width: 280px !important;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .subscribe-form {
+
+    &__input {
+      width: 320px !important;
+
+      input {
+        width: 280px !important;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .subscribe-form {
+
+    &__input {
+      width: 320px !important;
+
+      input {
+        width: 280px !important;
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .subscribe-form {
+
+    &__input {
+      width: 320px !important;
+
+      input {
+        width: 280px !important;
+      }
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .subscribe-form {
+    &__input {
+      width: 340px !important;
+
+      input {
+        width: 300px !important;
+      }
+    }
+  }
+}

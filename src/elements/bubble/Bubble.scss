@@ -1,0 +1,105 @@
+@import "~scss/utils/_var";
+
+.bubble {
+  position: relative;
+  padding: 16px 20px;
+  color: white;
+  border-radius: 6px;
+
+  &.primary {
+    background-color: $cPrimary;
+  }
+
+  &.secondary {
+    background-color: $cSecondary;
+  }
+
+  &.arrow:after {
+    display: none;
+    content: '';
+    position: absolute;
+    border: 16px solid transparent;
+    z-index: 99;
+  }
+
+  &.arrow.primary:after {
+    border-bottom: 16px solid $cPrimary;
+  }
+
+  &.arrow.secondary:after {
+    border-bottom: 16px solid $cSecondary;
+  }
+
+  &.top-left:after {
+    display: block;
+    top: calc(-100% + 23px);
+    left: calc(0% + 22px);
+  }
+  &.top-center:after {
+    display: block;
+    top: calc(-100% + 23px);
+    left: calc(50% - 12px);
+  }
+  &.top-right:after {
+    display: block;
+    top: calc(-100% + 77px);
+    left: calc(100% - 52px);
+  }
+
+  &.bottom-left:after {
+    display: block;
+    transform: rotate(180deg);
+    top: calc(100% - 1px);
+    left: calc(0% + 22px);
+  }
+  &.bottom-center:after {
+    display: block;
+    transform: rotate(180deg);
+    top: calc(100% - 1px);
+    left: calc(50% - 12px);
+  }
+  &.bottom-right:after {
+    display: block;
+    transform: rotate(180deg);
+    top: calc(100% - 1px);
+    left: calc(100% - 52px);
+  }
+
+  &.left-top:after {
+    display: block;
+    transform: rotate(-90deg);
+    top: calc(0% + 20px);
+    left: calc(0% - 30px);
+  }
+  &.left-center:after {
+    display: block;
+    transform: rotate(-90deg);
+    top: calc(50% - 16px);
+    left: calc(0% - 30px);
+  }
+  &.left-bottom:after {
+    display: block;
+    transform: rotate(-90deg);
+    top: calc(100% - 50px);
+    left: calc(0% - 30px);
+  }
+
+  &.right-top:after {
+    display: block;
+    transform: rotate(90deg);
+    top: calc(0% + 20px);
+    left: calc(100% - 1px);
+  }
+  &.right-center:after {
+    display: block;
+    transform: rotate(90deg);
+    top: calc(50% - 16px);
+    left: calc(100% - 1px);
+  }
+  &.right-bottom:after {
+    display: block;
+    transform: rotate(90deg);
+    top: calc(100% - 50px);
+    left: calc(100% - 1px);
+  }
+}

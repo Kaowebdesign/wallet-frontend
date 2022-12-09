@@ -1,0 +1,1099 @@
+@import "~scss/utils/_var";
+
+.typography {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 99;
+
+  &.center {
+    text-align: center;
+
+    a {
+      text-align: center;
+    }
+  }
+
+  &.bold {
+    font-weight: 800 !important;
+
+    a {
+      font-weight: 800 !important;
+    }
+  }
+  &.semibold{
+     font-weight: 600 !important;
+    a {
+      font-weight: 600 !important;
+    }
+  }
+  &.medium {
+    font-weight: 500 !important;
+
+    a {
+      font-weight: 500 !important;
+    }
+  }
+  &.regular{
+    font-weight: 400 !important;
+
+    a {
+      font-weight: 400 !important;
+    }
+  }
+  &.upper {
+    text-transform: uppercase;
+
+    a {
+      text-transform: uppercase;
+    }
+  }
+  &.lover {
+    text-transform: lowercase;
+
+    a {
+      text-transform: capitalize;
+    }
+  }
+  &.capitalize {
+    text-transform: capitalize;
+
+    a {
+      text-transform: capitalize;
+    }
+  }
+
+  &.primary {
+    color: $cPrimary;
+
+    a {
+      color: $cPrimary;
+    }
+  }
+  &.secondary {
+    color: $cSecondary;
+
+    &.link{
+      color: $cSecondary !important;
+    }
+
+    a {
+      color: $cSecondary;
+    }
+  }
+  &.default {
+    color: $cDefault;
+
+    a {
+      color: $cDefault;
+    }
+  }
+
+  &.gray {
+    color: $cTextGray;
+
+    a {
+      color: $cTextGray;
+    }
+  }
+  &.error {
+    color: $cError;
+
+    a {
+      color: $cError;
+    }
+  }
+  &.success {
+    color: $cSuccess;
+
+    a {
+      color: $cSuccess;
+    }
+  }
+  &.light-purple {
+    color: $cLightPurple;
+
+    a {
+      color: $cLightPurple;
+    }
+  }
+  &.gray-light{
+    color: $cGrayLight;
+
+    a {
+      color: $cGrayLight;
+    }
+  }
+  &.dark-gray{
+    color: $cTextGray;
+
+    a {
+      color: $cTextGray;
+    }
+  }
+
+  a {
+    opacity: 1;
+    text-decoration: none;
+    transition: .3s;
+  }
+
+  a:hover {
+    opacity: .9;
+    text-decoration: underline;
+    transition: .3s;
+  }
+
+  &.link-20.action, &.link-22.action, &.link-28.action, &.link-36.action {
+    a {
+      pointer-events: none;
+      transition: .3s;
+      color: $cSecondary;
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .typography {
+    // Title
+    &.logo {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 100%;
+    }
+
+    &.logo-small {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 100%;
+    }
+
+    &.title-156 {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 102px;
+      line-height: 132px;
+    }
+    &.title-78 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 108%;
+    }
+    &.title-72 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 108%;
+    }
+    &.title-66 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 120%;
+    }
+    &.title-48 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 120%;
+    }
+    &.title-38 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 28px;
+    }
+    &.title-36 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    &.title-22 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &.title-18 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    // Text
+    &.text-24 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 130%;
+    }
+    &.text-22 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &.text-20 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+    }
+    &.text-18 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    &.text-16 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    &.text-12 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    // Link
+    &.link-36 {
+      a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+    &.link-28 {
+      a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+    &.link-22 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 130%;
+      }
+    }
+    &.link-20 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+    &.link-18 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+    &.link-16 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .typography {
+
+    &.logo {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 33px;
+      line-height: 100%;
+    }
+
+    &.logo-small {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 100%;
+    }
+    // Title
+    &.title-156 {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 132px;
+      line-height: 132px;
+    }
+    &.title-78 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 104%;
+    }
+    &.title-72 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 100%;
+    }
+    &.title-66 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 52px;
+      line-height: 120%;
+    }
+    &.title-48 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 120%;
+    }
+    &.title-38 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 120%;
+    }
+    &.title-36 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 120%;
+    }
+    &.title-22 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &.title-18 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 27px;
+    }
+    // Text
+    &.text-24 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 136%;
+    }
+    &.text-22 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &.text-20 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+    }
+    &.text-18 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 27px;
+    }
+    &.text-16 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &.text-12 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    // Link
+    &.link-36 {
+      a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 120%;
+      }
+    }
+    &.link-28 {
+      a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+    &.link-22 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+    &.link-20 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+    &.link-18 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+    &.link-16 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .typography {
+    &.logo {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 33px;
+      line-height: 100%;
+    }
+
+    &.logo-small {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 100%;
+    }
+    // Title
+    &.title-156 {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 132px;
+      line-height: 132px;
+    }
+    &.title-78 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 104%;
+    }
+    &.title-72 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 100%;
+    }
+    &.title-66 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 52px;
+      line-height: 120%;
+    }
+    &.title-48 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 120%;
+    }
+    &.title-38 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 120%;
+    }
+    &.title-36 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 120%;
+    }
+    &.title-22 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &.title-18 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    // Text
+    &.text-24 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 136%;
+    }
+    &.text-22 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &.text-20 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+    }
+    &.text-18 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    &.text-16 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 27px;
+    }
+    &.text-12 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    // Link
+    &.link-36 {
+      a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 120%;
+      }
+    }
+    &.link-28 {
+      a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+    &.link-22 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+    &.link-20 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+    &.link-18 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+    &.link-16 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .typography {
+    &.logo {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 33px;
+      line-height: 100%;
+    }
+
+    &.logo-small {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 100%;
+    }
+    // Title
+    &.title-156 {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 132px;
+      line-height: 132px;
+    }
+    &.title-78 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 100%;
+    }
+    &.title-72 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 100%;
+    }
+    &.title-66 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 120%;
+    }
+    &.title-48 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 120%;
+    }
+    &.title-38 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 120%;
+    }
+    &.title-36 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 120%;
+    }
+    &.title-22 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &.title-18 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    // Text
+    &.text-24 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 150%;
+    }
+    &.text-22 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &.text-20 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+    }
+    &.text-18 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &.text-16 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &.text-12 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    // Link
+    &.link-36 {
+      a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 120%;
+      }
+    }
+    &.link-28 {
+      a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+    &.link-22 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    &.link-20 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+    &.link-18 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+    &.link-16 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .typography {
+    &.logo {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 33px;
+      line-height: 100%;
+    }
+
+    &.logo-small {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 100%;
+    }
+    // Title
+    &.title-156 {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 132px;
+      line-height: 132px;
+    }
+    &.title-78 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 100%;
+    }
+    &.title-72 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 100%;
+    }
+    &.title-66 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 120%;
+    }
+    &.title-48 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 120%;
+    } &.title-38 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 120%;
+      }
+
+    &.title-36 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 120%;
+    }
+    &.title-22 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &.title-18 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    // Text
+    &.text-24 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 150%;
+    }
+    &.text-22 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &.text-20 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+    }
+    &.text-18 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &.text-16 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &.text-12 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    // Link
+    &.link-36 {
+      a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 120%;
+      }
+    }
+    &.link-28 {
+      a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+    &.link-22 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    &.link-20 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+    &.link-18 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+    &.link-16 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .typography {
+    &.logo {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 100%;
+    }
+
+    &.logo-small {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 100%;
+    }
+    // Title
+    &.title-156 {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 156px;
+      line-height: 132px;
+    }
+    &.title-78 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 78px;
+      line-height: 100%;
+    }
+    &.title-72 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 100%;
+    }
+    &.title-66 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 66px;
+      line-height: 120%;
+    }
+    &.title-48 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 120%;
+    }&.title-38 {
+       font-style: normal;
+       font-weight: 600;
+       font-size: 38px;
+       line-height: 120%;
+     }
+
+    &.title-36 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 120%;
+    }
+    &.title-22 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+    }
+    &.text-18 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+    }
+    // Text
+    &.text-24 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 150%;
+    }
+    &.text-22 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+    }
+    &.text-20 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &.text-18 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+    }
+    &.text-16 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &.text-12 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    // Link
+    &.link-36 {
+      a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 100%;
+      }
+    }
+    &.link-28 {
+      a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+    &.link-22 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 27px;
+      }
+    }
+    &.link-20 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+    &.link-18 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+    &.link-16 {
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+}

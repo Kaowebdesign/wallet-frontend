@@ -1,0 +1,48 @@
+@import "~scss/utils/_var";
+
+.sider {
+  background-color: $cBgDefault !important;
+  border-right: 1px solid $cBorderPrimary;
+  position: relative;
+
+  &__logo {
+    margin-left: 23px;
+    height: 64px;
+  }
+
+  &__logo.hide {
+    margin-left: 28px;
+  }
+
+  &_title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .ant-menu-item-selected &_title {
+    font-weight: 500;
+  }
+
+  &__collapsed-wrapper {
+    position: absolute;
+    top: calc(100% - 40px);
+    left: 0;
+    height: 40px;
+    width: 100%;
+    border-top: 1px solid $cBorderPrimary;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    font-size: 18px !important;
+    text-transform: capitalize;
+  }
+
+  .ant-menu-inline-collapsed {
+    width: 79px;
+  }
+}

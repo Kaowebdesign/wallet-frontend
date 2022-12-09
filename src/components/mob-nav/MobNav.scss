@@ -1,0 +1,68 @@
+@import "~scss/utils/_var";
+
+.mob-mav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  z-index: -1;
+  display: none;
+
+  &__row {
+    margin-top: 100px;
+  }
+
+  &.show {
+    display: block;
+    z-index: 998;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: $cBgPrimary;
+  }
+
+  &__link-item {
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) {
+  .mob-mav {
+
+    &__auth {
+      margin-top: 80px;
+    }
+
+
+    &__social {
+      margin-top: 40px;
+    }
+
+    &__signin {
+      padding-right: 20px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .mob-mav {
+
+    &__auth {
+      margin-top: 160px;
+    }
+
+    &__social {
+      margin-top: 100px;
+    }
+
+    &__signin {
+      padding-right: 30px;
+    }
+  }
+}

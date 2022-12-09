@@ -1,0 +1,370 @@
+@import "~scss/utils/_var";
+
+.device-block {
+  position: relative;
+  background: $cBgPrimary;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &__title-span {
+    color: $cSecondary;
+  }
+
+  &__grid {
+    position: absolute;
+  }
+
+  &__google-play {
+    position: relative;
+    z-index: 99;
+  }
+
+  &__app-store {
+    position: relative;
+    z-index: 99;
+    margin-left: 40px;
+  }
+
+  &__device-wrapper {
+    position: relative;
+  }
+
+  &__phone {
+    position: absolute;
+    z-index: 99;
+  }
+
+  &__card {
+    position: absolute;
+    z-index: 100;
+
+  }
+
+  &__ETH {
+    position: absolute;
+    z-index: 100;
+  }
+
+  &__TRX {
+    position: absolute;
+    z-index: 100;
+  }
+
+  &__target {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 95%;
+    left: 0;
+  }
+}
+
+@media (min-width: 320px) {
+  .device-block {
+    margin-top: 160px;
+
+    &__content-wrapper {
+      padding-left: 0;
+      margin-top: 60px;
+    }
+
+    &__stores-wrapper {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__device-wrapper {
+      height: 468px;
+    }
+
+    &__app-store {
+      margin-top: 24px;
+      margin-left: 0;
+    }
+
+
+    &__grid {
+      width: 823px;
+      top: 145px;
+      left: 0;
+    }
+
+    &__phone {
+      width: 371px;
+      top: 90px;
+      left: calc(50% - 190px);
+    }
+
+    &__card {
+     display: none;
+    }
+
+    &__ETH {
+      width: 88px;
+      top: 220px;
+      left: calc(50% + 95px);
+    }
+
+    &__TRX {
+      width: 88px;
+      top: 290px;
+      left: calc(50% - 193px);
+    }
+  }
+}
+@media (min-width: 768px) {
+  .device-block {
+    margin-top: 110px;
+
+    &__app-store {
+      margin-left: 40px;
+    }
+
+    &__app-store {
+      margin-top: 0;
+      margin-left: 40px;
+    }
+
+    &__content-wrapper {
+      padding-left: 0;
+      margin-top: 60px;
+    }
+
+    &__stores-wrapper {
+      flex-direction: row;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__device-wrapper {
+      height: 468px;
+    }
+
+    &__grid {
+      width: 823px;
+      top: 145px;
+      left: 0;
+    }
+
+    &__phone {
+      width: 371px;
+      top: 90px;
+      left: calc(50% - 190px);
+    }
+
+    &__card {
+      display: block;
+      width: 300px;
+      top: 235px;
+      left: calc(50%);
+    }
+
+    &__ETH {
+      width: 118px;
+      top: 93px;
+      left: calc(50% - 330px);
+    }
+
+    &__TRX {
+      width: 118px;
+      top: 260px;
+      left: calc(50% - 230px);
+    }
+  }
+}
+@media (min-width: 992px) {
+  .device-block {
+    margin-top: 110px;
+
+    &__content-wrapper {
+      padding-left: 0;
+      margin-top: 60px;
+    }
+
+    &__stores-wrapper {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__device-wrapper {
+      height: 468px;
+    }
+
+
+    &__grid {
+      width: 823px;
+      top: 145px;
+      left: 0;
+    }
+
+    &__phone {
+      width: 371px;
+      top: 90px;
+      left: calc(50% - 190px);
+    }
+
+    &__card {
+      width: 300px;
+      top: 235px;
+      left: calc(50%);
+    }
+
+    &__ETH {
+      width: 118px;
+      top: 93px;
+      left: calc(50% - 330px);
+    }
+
+    &__TRX {
+      width: 118px;
+      top: 260px;
+      left: calc(50% - 230px);
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .device-block {
+    margin-top: 180px;
+
+    &__content-wrapper {
+      padding-left: 145px;
+    }
+
+
+
+    &__stores-wrapper {
+      display: block;
+      margin-top: 40px;
+    }
+
+    &__grid {
+      width: 823px;
+      top: 40px;
+      left: 0;
+    }
+
+    &__content-wrapper {
+      margin-top: 130px;
+      margin-bottom: 140px;
+    }
+
+    &__phone {
+      width: 371px;
+      left: 120px;
+      top: 95px;
+    }
+
+    &__card {
+      width: 300px;
+      top: 235px;
+      left: 330px;
+    }
+
+    &__ETH {
+      width: 118px;
+      top: 105px;
+      left: -10px;
+    }
+
+    &__TRX {
+      width: 118px;
+      top: 230px;
+      left: 80px;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .device-block {
+    margin-top: 180px;
+
+    &__stores-wrapper {
+      margin-top: 40px;
+    }
+
+    &__grid {
+      width: 823px;
+      top: 40px;
+      left: 0;
+    }
+
+    &__content-wrapper {
+      margin-top: 130px;
+      margin-bottom: 140px;
+    }
+
+    &__phone {
+      width: 371px;
+      left: 120px;
+      top: 95px;
+    }
+
+    &__card {
+      width: 300px;
+      top: 235px;
+      left: 330px;
+    }
+
+    &__ETH {
+      width: 118px;
+      top: 105px;
+      left: -10px;
+    }
+
+    &__TRX {
+      width: 118px;
+      top: 230px;
+      left: 80px;
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .device-block {
+    margin-top: 180px;
+
+    &__stores-wrapper {
+      margin-top: 40px;
+    }
+
+    &__content-wrapper {
+      margin-top: 195px;
+      margin-bottom: 210px;
+    }
+
+    &__grid {
+      width: 823px;
+      top: 40px;
+      left: 0;
+    }
+
+    &__phone {
+      width: 528px;
+      left: 120px;
+      top: 75px;
+    }
+
+    &__card {
+      width: 329px;
+      top: 280px;
+      left: 420px;
+    }
+
+    &__ETH {
+      width: 150px;
+      height: 150px;
+      top: 90px;
+      left: -50px;
+    }
+
+    &__TRX {
+      width: 150px;
+      height: 150px;
+      top: 250px;
+      left: 75px;
+    }
+  }
+}

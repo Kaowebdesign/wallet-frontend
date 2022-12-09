@@ -1,0 +1,41 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: transparent;
+  box-shadow: 0 1px 24px transparent;
+  transition: .3s;
+
+  &.shadow {
+    background-color: white;
+    box-shadow: 0 1px 24px rgba(51, 46, 84, 0.06);
+    transition: .3s;
+  }
+
+  &__signin {
+    margin-left: 24px !important;
+    margin-right: 24px !important;
+  }
+
+  &__links {
+    margin-left: 40px;
+  }
+
+  &__links.hide {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) {
+  .header {
+    padding: 13px 0;
+
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 26px 0;
+  }
+}

@@ -1,0 +1,25 @@
+.header-notification {
+
+  &_wrapper {
+    padding-top: 5px !important;
+    width: 400px;
+
+    .ant-popover-title {
+      padding: 16px 24px;
+    }
+
+    .ant-popover-inner-content {
+      min-height: 330px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .ant-popover-arrow {
+      display: none;
+    }
+  }
+
+}
+

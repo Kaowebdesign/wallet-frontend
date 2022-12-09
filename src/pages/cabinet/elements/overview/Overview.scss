@@ -1,0 +1,35 @@
+.overview{
+  &__title{
+    padding-bottom: 20px;
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item{
+    margin-bottom: 30px;
+    width: 50%;
+  }
+  &__label{
+    margin-bottom: 7px;
+    display: inline-flex;
+    align-items: center;
+  }
+  &__value{
+    font-size: 20px;
+    line-height: 26px;
+    color: #332E54;
+    margin-bottom: 0px;
+    span{
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &.red{
+      color: #D23E50;
+    }
+    &.green{
+      color: #358F54;
+    }
+  }
+}

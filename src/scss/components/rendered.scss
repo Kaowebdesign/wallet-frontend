@@ -1,0 +1,178 @@
+.rendered {
+  p, h2, h3, h4, h2 a, h3 a, h4 a{
+    color: #332E54;
+  }
+  img {
+    border-radius: 14px;
+  }
+  a {
+    color: #554CC2;
+    &:visited{
+      color: #A29AF2;
+    }
+    &:hover{
+      color: #554CC2;
+      text-decoration: underline;
+    }
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    display: flex;
+    &::before{
+      content: "\2022";
+      color: #554CC2;
+      font-weight: bold;
+      display: inline-block;
+      width: 8px;
+      margin-right: 10px;
+    }
+  }
+  blockquote {
+    color: $cSecondary;
+    position: relative;
+    &::before{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 18px;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFESURBVHgB1ZNBTsJQGITn/4t7joAnkAsY6NZAbKI1Lr2BRxBPQG9g2OKCmkjirtgLiCew3gAXbqztb0m01Pp+fOmO2XUy35t5TUsw6NyLOtlna0aST6bzXgALlQwQTu8Pr398MgYzJ4Kg851IUidzw9BNth6uML8KPC9q72XOUxmsiECj6rKq/GH8YmQEAVeNVsqBKbhWjpxM/tkwHqsMyVsJ+UfxBRg3piBEktt5b79unwwij+HMtjGbGzi4gqJixcjkMznj/xgu1yvXXC8pvqRJ3bZluOl6Ybq0Yfh0EPXVJYU+3vO7uud7UZcgXZXJ8seyQMCeFhTIIly4qz9+yn2okCzDh80/w8U7OlCzOZ5NPhGOoeu1+lCcT+pVibEyFoPbGiOEZa0AapiIEqMP6cBSjGZq2wabFlhr9wtaaCaxDX4BQ9GGPcFDTEwAAAAASUVORK5CYII=');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    p {
+      color: $cSecondary;
+    }
+  }
+}
+@media only screen and (min-width: 320px) {
+  .rendered {
+    p {
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 26px;
+      line-height: 31px;
+      margin: 24px 0 22px;
+      font-weight: 600;
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 28px;
+      margin: 22px 0;
+      font-weight: 600;
+    }
+    h4 {
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: 600;
+      margin: 22px 0;
+    }
+    ul {
+      margin-top: 4px;
+      padding-left: 11px;
+    }
+    li {
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0 0 16px;
+      &::before{
+        content: "\2022";
+        color: #554CC2;
+        font-weight: bold;
+        display: inline-block;
+        width: 8px;
+        margin-right: 10px;
+      }
+    }
+    blockquote {
+      padding-left: 32px;
+      p {
+        font-size: 22px;
+        line-height: 26px;
+        padding-top: 13px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .rendered {
+    p, li {
+      font-size: 16px;
+      line-height: 27px;
+    }
+    h2 {
+      font-size: 40px;
+      line-height: 48px;
+    }
+    h3 {
+      font-size: 28px;
+      line-height: 34px;
+    }
+    h4 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    ul {
+      padding-left: 30px;
+    }
+    blockquote {
+      padding-left: 44px;
+      p {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .rendered {
+    p, li {
+      font-size: 18px;
+      line-height: 27px;
+    }
+    h2 {
+      font-size: 44px;
+      line-height: 52px;
+    }
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .rendered {
+    p {
+      margin-bottom: 30px;
+    }
+    li {
+      margin-bottom: 16px;
+    }
+    p, li {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    h2 {
+      font-size: 48px;
+      line-height: 57px;
+      margin: 26px 0 20px;
+    }
+    h3 {
+      font-size: 36px;
+      line-height: 43px;
+      margin: 24px 0 20px;
+    }
+    h4 {
+      font-size: 28px;
+      line-height: 36px;
+      margin: 32px 0 20px;
+    }
+    blockquote {
+      margin: 6px 0;
+    }
+  }
+}

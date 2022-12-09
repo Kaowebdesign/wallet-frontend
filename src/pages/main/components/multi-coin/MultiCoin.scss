@@ -1,0 +1,920 @@
+@import "~scss/utils/_var";
+
+.multi-coin-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  &__cube {
+    position: absolute;
+  }
+
+  &__target {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 95%;
+    left: 0;
+  }
+
+  .icon {
+    position: absolute;
+  }
+
+  &__title-span {
+    color: $cPrimary ;
+  }
+
+  .cube-1 {
+    width: 22px;
+    height: 22px;
+
+    path {
+      fill: #65D9E3;
+    }
+  }
+
+  .cube-2 {
+    width: 16px;
+    height: 16px;
+
+    path {
+      fill: #4F59CD;
+    }
+  }
+
+  .cube-3 {
+    width: 14px;
+    height: 14px;
+
+    path {
+      fill: #554CC2;
+    }
+  }
+
+  .cube-4 {
+    width: 14px;
+    height: 14px;
+
+    path {
+      fill: #FCB57F;
+    }
+  }
+
+  .cube-5 {
+    width: 15px;
+    height: 15px;
+
+    path {
+      fill: #8DDEE6;
+    }
+  }
+
+  .cube-6 {
+    width: 14px;
+    height: 14px;
+
+    path {
+      fill: #FCB57F;
+    }
+  }
+
+  .cube-7 {
+    width: 20px;
+    height: 20px;
+
+    path {
+      fill: #8DDEE6;
+    }
+  }
+
+  .cube-8 {
+    width: 18px;
+    height: 18px;
+
+    path {
+      fill: #FADB64;
+    }
+  }
+
+  .cube-9 {
+    width: 18px;
+    height: 18px;
+
+    path {
+      fill: #554CC2;
+    }
+  }
+
+  .cube-10 {
+    width: 16px;
+    height: 16px;
+
+    path {
+      fill: #F9DF64;
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .multi-coin-block {
+    margin-top: 170px;
+    height: 504px ;
+
+    &__text {
+      margin-top: 22px;
+    }
+
+    &__ATOM {
+      width: 85px;
+      top: -5px;
+      left: calc(100% - 70px);
+    }
+
+    &__BCH {
+      width: 85px;
+      top: 340px;
+      left: calc(0% - 25px);
+    }
+
+    &__BNB {
+      width: 85px;
+      top: 335px;
+      left: calc(100% - 70px);
+    }
+
+    &__BTC {
+      width: 85px;
+      top: 70px;
+      left: calc(0% + 60px);
+    }
+
+    &__DCR {
+     display: none;
+    }
+
+    &__DGB {
+      display: none;
+    }
+
+    &__EOS {
+      display: none;
+    }
+
+    &__ETH {
+      width: 85px;
+      top: 50px;
+      left: calc(50% + 30px);
+    }
+
+    &__LTC {
+      display: none;
+    }
+
+    &__TRX {
+      width: 85px;
+      top: -40px;
+      left: calc(50% - 50px);
+    }
+
+    &__USDT {
+      width: 85px;
+      top: 420px;
+      left: calc(100% - 135px);;
+    }
+
+    &__VET {
+      width: 85px;
+      top: 10px;
+      left: calc(0% - 10px);
+    }
+
+    &__XMR {
+      width: 85px;
+      top: 410px;
+      left: calc(0% + 35px);;
+    }
+
+    &__XRP {
+      width: 85px;
+      top: 350px;
+      left: calc(50% - 55px);;
+    }
+
+    .cube-1 {
+      top: 50px;
+      left: 150px;
+    }
+
+    .cube-2 {
+      top: 130px;
+      left: 550px;
+    }
+
+    .cube-3 {
+      top: 150px;
+      left: 800px;
+    }
+
+    .cube-4 {
+      top: 0;
+      left: 950px;
+    }
+
+    .cube-5 {
+      top: 300px;
+      left: 900px;
+    }
+
+    .cube-6 {
+      top: 450px;
+      left: 900px;
+    }
+
+    .cube-7 {
+      top: 380px;
+      left: 600px;
+    }
+
+    .cube-8 {
+      top: 460px;
+      left: 150px;
+    }
+
+    .cube-9 {
+     display: none;
+    }
+
+    .cube-10 {
+      top: 220px;
+      left: 5px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .multi-coin-block {
+    margin-top: 170px;
+    height: 516px;
+
+    &__text {
+      margin-top: 24px;
+    }
+
+    &__ATOM {
+      width: 106px;
+      top: 10px;
+      left: 550px;
+    }
+
+    &__BCH {
+      width: 106px;
+      top: 300px;
+      left: 40px;
+    }
+
+    &__BNB {
+      width: 106px;
+      top: 300px;
+      left: 490px;
+    }
+
+    &__BTC {
+      width: 106px;
+      top: 70px;
+      left: 180px;
+    }
+
+    &__DCR {
+      width: 106px;
+      top: 100px;
+      left: 600px;
+    }
+
+    &__DGB {
+      top: 370px;
+      left: 630px;
+    }
+
+    &__EOS {
+      width: 106px;
+      top: 80px;
+      left: 15px;
+    }
+
+    &__ETH {
+      width: 106px;
+      top: 50px;
+      left: 400px;
+    }
+
+    &__LTC {
+      width: 106px;
+      top: 370px;
+      left: -5px;
+    }
+
+    &__TRX {
+      width: 106px;
+      top: -40px;
+      left: 290px;
+    }
+
+    &__USDT {
+      width: 106px;
+      top: 420px;
+      left: 420px;
+    }
+
+    &__VET {
+      width: 106px;
+      top: 10px;
+      left: 50px;
+    }
+
+    &__XMR {
+      width: 106px;
+      top: 410px;
+      left: 180px;
+    }
+
+    &__XRP {
+      width: 106px;
+      top: 320px;
+      left: 300px;
+    }
+
+    .cube-1 {
+      top: 50px;
+      left: 150px;
+    }
+
+    .cube-2 {
+      top: 130px;
+      left: 550px;
+    }
+
+    .cube-3 {
+      top: 150px;
+      left: 800px;
+    }
+
+    .cube-4 {
+      top: 0;
+      left: 950px;
+    }
+
+    .cube-5 {
+      top: 300px;
+      left: 900px;
+    }
+
+    .cube-6 {
+      top: 450px;
+      left: 900px;
+    }
+
+    .cube-7 {
+      top: 380px;
+      left: 600px;
+    }
+
+    .cube-8 {
+      top: 460px;
+      left: 150px;
+    }
+
+    .cube-9 {
+      top: 300px;
+      left: 50px;
+    }
+
+    .cube-10 {
+      top: 220px;
+      left: 5px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .multi-coin-block {
+    margin-top: 170px;
+    height: 516px;
+
+    &__text {
+      margin-top: 24px;
+    }
+
+    &__ATOM {
+      width: 106px;
+      top: 10px;
+      left: 750px;
+    }
+
+    &__BCH {
+      top: 300px;
+      left: 100px;
+    }
+
+    &__BNB {
+      top: 300px;
+      left: 650px;
+    }
+
+    &__BTC {
+      top: 70px;
+      left: 240px;
+    }
+
+    &__DCR {
+      top: 100px;
+      left: 850px;
+    }
+
+    &__DGB {
+      top: 370px;
+      left: 900px;
+    }
+
+    &__EOS {
+      top: 80px;
+      left: 90px;
+    }
+
+    &__ETH {
+      top: 50px;
+      left: 600px;
+    }
+
+    &__LTC {
+      top: 370px;
+      left: 30px;
+    }
+
+    &__TRX {
+      top: -40px;
+      left: 380px;
+    }
+
+    &__USDT {
+      top: 420px;
+      left: 550px;
+    }
+
+    &__VET {
+      top: 10px;
+      left: 50px;
+    }
+
+    &__XMR {
+      top: 410px;
+      left: 300px;
+    }
+
+    &__XRP {
+      top: 350px;
+      left: 430px;
+    }
+
+    .cube-1 {
+      top: 50px;
+      left: 150px;
+    }
+
+    .cube-2 {
+      top: 130px;
+      left: 550px;
+    }
+
+    .cube-3 {
+      top: 150px;
+      left: 800px;
+    }
+
+    .cube-4 {
+      top: 0;
+      left: 950px;
+    }
+
+    .cube-5 {
+      top: 300px;
+      left: 900px;
+    }
+
+    .cube-6 {
+      top: 450px;
+      left: 900px;
+    }
+
+    .cube-7 {
+      top: 380px;
+      left: 600px;
+    }
+
+    .cube-8 {
+      top: 460px;
+      left: 150px;
+    }
+
+    .cube-9 {
+      top: 300px;
+      left: 50px;
+    }
+
+    .cube-10 {
+      top: 220px;
+      left: 5px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .multi-coin-block {
+    margin-top: 180px;
+    height: 644px ;
+
+    &__text {
+      margin-top: 28px;
+    }
+
+    &__ATOM {
+      top: 78px;
+      left: 1000px;
+    }
+
+    &__BCH {
+      top: 360px;
+      left: 250px;
+    }
+
+    &__BNB {
+      top: 360px;
+      left: 900px;
+    }
+
+    &__BTC {
+      top: 120px;
+      left: 430px;
+    }
+
+    &__DCR {
+      top: 182px;
+      left: 1100px;
+    }
+
+    &__DGB {
+      top: 450px;
+      left: 1150px;
+    }
+
+    &__EOS {
+      top: 185px;
+      left: 150px;
+    }
+
+    &__ETH {
+      top: 140px;
+      left: 800px;
+    }
+
+    &__LTC {
+      top: 470px;
+      left: 110px;
+    }
+
+    &__TRX {
+      top: 20px;
+      left: 630px;
+    }
+
+    &__USDT {
+      top: 530px;
+      left: 750px;
+    }
+
+    &__VET {
+      top: 70px;
+      left: 250px;
+    }
+
+    &__XMR {
+      top: 530px;
+      left: 480px;
+    }
+
+    &__XRP {
+      top: 420px;
+      left: 600px;
+    }
+
+    .cube-1 {
+      top: 130px;
+      left: 200px;
+    }
+
+    .cube-2 {
+      top: 200px;
+      left: 690px;
+    }
+
+    .cube-3 {
+      top: 252px;
+      left: 1050px;
+    }
+
+    .cube-4 {
+      top: 80px;
+      left: 1220px;
+    }
+
+    .cube-5 {
+      top: 350px;
+      left: 1220px;
+    }
+
+    .cube-6 {
+      top: 540px;
+      left: 1250px;
+    }
+
+    .cube-7 {
+      top: 470px;
+      left: 810px;
+    }
+
+    .cube-8 {
+      top: 570px;
+      left: 275px;
+    }
+
+    .cube-9 {
+      top: 380px;
+      left: 125px;
+    }
+
+    .cube-10 {
+      top: 315px;
+      left: 50px;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .multi-coin-block {
+    margin-top: 180px;
+    height: 644px ;
+
+    &__text {
+      margin-top: 28px;
+    }
+
+    &__ATOM {
+      top: 78px;
+      left: 1000px;
+    }
+
+    &__BCH {
+      top: 360px;
+      left: 250px;
+    }
+
+    &__BNB {
+      top: 360px;
+      left: 900px;
+    }
+
+    &__BTC {
+      top: 120px;
+      left: 430px;
+    }
+
+    &__DCR {
+      top: 182px;
+      left: 1100px;
+    }
+
+    &__DGB {
+      top: 450px;
+      left: 1150px;
+    }
+
+    &__EOS {
+      top: 185px;
+      left: 150px;
+    }
+
+    &__ETH {
+      top: 140px;
+      left: 800px;
+    }
+
+    &__LTC {
+      top: 470px;
+      left: 110px;
+    }
+
+    &__TRX {
+      top: 20px;
+      left: 630px;
+    }
+
+    &__USDT {
+      top: 530px;
+      left: 750px;
+    }
+
+    &__VET {
+      top: 70px;
+      left: 250px;
+    }
+
+    &__XMR {
+      top: 530px;
+      left: 480px;
+    }
+
+    &__XRP {
+      top: 420px;
+      left: 600px;
+    }
+
+    .cube-1 {
+      top: 130px;
+      left: 200px;
+    }
+
+    .cube-2 {
+      top: 200px;
+      left: 690px;
+    }
+
+    .cube-3 {
+      top: 252px;
+      left: 1050px;
+    }
+
+    .cube-4 {
+      top: 80px;
+      left: 1220px;
+    }
+
+    .cube-5 {
+      top: 350px;
+      left: 1220px;
+    }
+
+    .cube-6 {
+      top: 540px;
+      left: 1250px;
+    }
+
+    .cube-7 {
+      top: 470px;
+      left: 810px;
+    }
+
+    .cube-8 {
+      top: 570px;
+      left: 275px;
+    }
+
+    .cube-9 {
+      top: 380px;
+      left: 125px;
+    }
+
+    .cube-10 {
+      top: 315px;
+      left: 50px;
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .multi-coin-block {
+    margin-top: 180px;
+    height: 758px ;
+
+    &__text {
+      margin-top: 28px;
+    }
+
+    &__ATOM {
+      top: 100px;
+      left: 1150px;
+    }
+
+    &__BCH {
+      top: 450px;
+      left: 320px;
+    }
+
+    &__BNB {
+      top: 400px;
+      left: 1150px;
+    }
+
+    &__BTC {
+      top: 150px;
+      left: 520px;
+    }
+
+    &__DCR {
+      top: 220px;
+      left: 1300px;
+    }
+
+    &__DGB {
+      top: 500px;
+      left: 1350px;
+    }
+
+    &__EOS {
+      top: 220px;
+      left: 200px;
+    }
+
+    &__ETH {
+      top: 180px;
+      left: 950px;
+    }
+
+    &__LTC {
+      top: 550px;
+      left: 150px;
+    }
+
+    &__TRX {
+      top: 20px;
+      left: 700px;
+    }
+
+    &__USDT {
+      top: 630px;
+      left: 850px;
+    }
+
+    &__VET {
+      top: 70px;
+      left: 380px;
+    }
+
+    &__XMR {
+      top: 630px;
+      left: 550px;
+    }
+
+    &__XRP {
+      top: 550px;
+      left: 700px;
+    }
+
+    .cube-1 {
+      top: 150px;
+      left: 280px;
+    }
+
+    .cube-2 {
+      top: 200px;
+      left: 800px;
+    }
+
+    .cube-3 {
+      top: 280px;
+      left: 1200px;
+    }
+
+    .cube-4 {
+      top: 80px;
+      left: 1460px;
+    }
+
+    .cube-5 {
+      top: 400px;
+      left: 1350px;
+    }
+
+    .cube-6 {
+      top: 600px;
+      left: 1450px;
+    }
+
+    .cube-7 {
+      top: 550px;
+      left: 1000px;
+    }
+
+    .cube-8 {
+      top: 680px;
+      left: 350px;
+    }
+
+    .cube-9 {
+      top: 500px;
+      left: 180px;
+    }
+
+    .cube-10 {
+      top: 400px;
+      left: 50px;
+    }
+  }
+}

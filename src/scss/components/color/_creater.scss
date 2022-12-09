@@ -1,0 +1,16 @@
+@import "../parentComponent/creator";
+
+@import "vars";
+@import "maker";
+
+.c-color{
+
+  &_secondary {
+    color: $cSecondary;
+  }
+
+  &_primary {
+    color: $cPrimary;
+  }
+
+}

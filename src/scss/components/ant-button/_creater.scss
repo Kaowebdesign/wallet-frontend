@@ -1,0 +1,107 @@
+@import "../parentComponent/creator";
+
+@import "vars";
+@import "maker";
+
+
+.ant-btn{
+
+  color: $cSecondary;
+
+  &.full-width{
+    width: 100%;
+  }
+
+  &.default{
+    color: $cPrimary;
+    &:hover, &:active{
+      border-color: #E0E0E5;
+    }
+    &.secondary{
+      color: $cSecondary;
+    }
+  }
+
+  &.danger{
+    background-color: $cError;
+    color: $cWhite;
+    border: none;
+    &:hover{
+      background-color: #e15667;
+    }
+    &:active{
+      background-color: #F6D8DC;
+    }
+    &:disabled{
+      &:hover{
+        background-color: #F6D8DC;
+      }
+      background-color: #F6D8DC;
+    }
+  }
+
+  &.danger-outline{
+    background-color: $cWhite;
+    color: $cError;
+    border-color: $cError;
+
+    &:hover{
+      color: rgba($cError, .8);
+      border-color: rgba($cError, .8);
+    }
+    &:focus,
+    &:active{
+      color: $cError;
+      border-color: $cError;
+    }
+  }
+
+  &.cancel{
+    color: $cError;
+    border-color: $cError !important;
+    &:hover, &:active, &:hover{
+      color: $cError !important;
+      border-color: $cError !important;
+      background: transparent !important;
+    }
+  }
+
+  &:disabled{
+    border-color: #D1CEF3;
+    background-color: #D1CEF3;
+    color: $cWhite;
+    &:hover{
+      border-color: #D1CEF3;
+      background-color: #D1CEF3;
+      color: $cWhite;
+    }
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-color: $cSecondary;
+  }
+
+  &-default,
+  &-dashed {
+    &:hover,
+    &:active,
+    &:focus {
+      color: $cSecondary;
+    }
+  }
+
+  &-primary {
+    color: $cDefault;
+    background-color: $cSecondary;
+    border-color: $cSecondary;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $cDefault;
+      background-color: $cBtnPrimaryHover;
+    }
+  }
+}

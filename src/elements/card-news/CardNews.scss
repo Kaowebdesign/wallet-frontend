@@ -1,0 +1,162 @@
+@import "~scss/utils/_var";
+
+.card-news {
+
+  &__item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 22px;
+    transition: .5s;
+    .ant-image{
+      display: block;
+      border-radius: 14px;
+      padding-top: 63.4%;
+      overflow: hidden;
+      border-radius: 14px;
+      .ant-image-img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-height: 100%;
+        min-width: 100%;
+        width: initial;
+        max-width: 150%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &__item:hover {
+    box-shadow: 0 4px 48px rgba(104, 96, 160, 0.14);
+    transition: .3s;
+  }
+
+  &__full {
+    display: flex;
+    .ant-image {
+      display: block;
+      border-radius: 14px;
+      overflow: hidden;
+      border-radius: 14px;
+      padding-top: 30%;
+      .ant-image-img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-height: 100%;
+        min-width: 100%;
+        width: initial;
+        max-width: 150%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    box-orient: vertical;
+  }
+
+  &__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
+  }
+  &__link{
+    &:hover{
+      color: $cSecondary;
+      p {
+        color: $cSecondary;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .card-news {
+    padding: 15px 0;
+
+    &__full {
+      flex-direction: column;
+      .ant-image{
+        width: 100%;
+      }
+    }
+
+    &__content-full {
+      width: 100%;
+      align-self: self-start;
+      margin-left: 0;
+    }
+
+    &__text {
+      margin: 8px 0 10px 0;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .card-news {
+    padding: 16px;
+
+    &__full {
+      flex-direction: row;
+      .ant-image {
+        width: 50%;
+        .ant-image-img{
+          width: 100%;
+        }
+      }
+    }
+    &__content-full {
+      width: 50%;
+      align-self: center;
+      margin-left: 30px;
+    }
+
+    &__text, &__link {
+      display: -webkit-box;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .card-news {
+    padding: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .card-news {
+
+  }
+}
+@media (min-width: 1440px) {
+  .card-news {
+    &__title {
+      width: 100%;
+    }
+
+    &__text {
+      margin: 16px 0 20px 0;
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .card-news {
+    &__title {
+      width: 70%;
+    }
+  }
+}

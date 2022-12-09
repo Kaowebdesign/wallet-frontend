@@ -1,0 +1,12 @@
+.portfolio-currency {
+  display: flex;
+  margin-left: 15px;
+
+  &_item {
+    width: 160px;
+
+    &_title {
+      margin-bottom: 7px;
+    }
+  }
+}

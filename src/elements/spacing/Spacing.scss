@@ -1,0 +1,71 @@
+/*
+* Create templates for component via range of template name and styles
+*
+* @param {$classes_range} Associative array includes: template name and style
+* @param {$params} Associative array includes: Template name modifier and value
+*
+*/
+@mixin BootCreateRangeTemplate($classes_range, $params) {
+  @each $template_name, $style in $classes_range {
+    @each $modify, $value in $params {
+      %#{$template_name}-#{$modify} {
+        #{$style}:#{$value}
+      }
+    }
+  }
+}
+
+$config: (
+        margin: 8px,
+);
+
+$margin_base: (
+        'mg':'margin',
+        'mg-t':'margin-top',
+        'mg-r':'margin-right',
+        'mg-b':'margin-bottom',
+        'mg-l':'margin-left'
+);
+
+$margin_x_base: (
+        'mg-x':'margin'
+);
+
+$margin_y_base: (
+        'mg-y':'margin'
+);
+
+$margin_config:(
+        1: map-get($map: $config, $key: 'margin') * 1,
+        2: map-get($map: $config, $key: 'margin') * 2,
+        3: map-get($map: $config, $key: 'margin') * 3,
+        4: map-get($map: $config, $key: 'margin') * 4,
+        5: map-get($map: $config, $key: 'margin') * 5
+);
+
+$margin_x_config: (
+        1: 0 map-get($map: $margin_config, $key: 1),
+        2: 0 map-get($map: $margin_config, $key: 2),
+        3: 0 map-get($map: $margin_config, $key: 3),
+        4: 0 map-get($map: $margin_config, $key: 4),
+        5: 0 map-get($map: $margin_config, $key: 5)
+);
+
+$margin_y_config: (
+        1: map-get($map: $margin_config, $key: 1) 0,
+        2: map-get($map: $margin_config, $key: 2) 0,
+        3: map-get($map: $margin_config, $key: 3) 0,
+        4: map-get($map: $margin_config, $key: 4) 0,
+        5: map-get($map: $margin_config, $key: 5) 0
+);
+
+/*
+*
+* Generate extensions with name 'mg-{number}' | 'mg-{size}-{number}'
+* Generate extensions with name 'mg-x-{number}'
+* Generate extensions with name 'mg-y-{number}'
+*
+*/
+@include BootCreateRangeTemplate($margin_base,$margin_config);
+@include BootCreateRangeTemplate($margin_x_base,$margin_x_config);
+@include BootCreateRangeTemplate($margin_y_base,$margin_y_config);

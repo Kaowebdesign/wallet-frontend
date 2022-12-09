@@ -1,0 +1,33 @@
+image: docker
+
+
+stages:
+  - master
+
+master:
+  stage: master
+  image: node:14.16.0
+  environment: 
+    name: master/$CI_PIPELINE_IID
+  before_script:
+    - apt-get update -y
+    - apt-get -y install rsync
+    - yarn --cache-folder .yarn
+    - for i in $(compgen -v | grep master_); do eval $(echo $(echo $i | sed 's/master_//')=${!i}) ; done
+    - mkdir ~/.ssh
+    - echo "${MASTER_SSH_FINGERPRINT}" > ~/.ssh/known_hosts
+    - eval $(ssh-agent -s)
+    - echo "$MASTER_SSH_KEY" | tr -d '\r' | ssh-add - > /dev/null
+  script:
+    - CI='' yarn build
+    - rsync -r -a -v -e "ssh -p $MASTER_SSH_PORT" --exclude-from .rsync_exclude --delete ./ $MASTER_SSH_LOGIN@$MASTER_SSH_IP:~/www/
+  cache:
+    paths:
+      - node_modules/
+      - .yarn
+    key: $CI_COMMIT_REF_SLUG
+  tags: 
+    - first
+  only:
+    - master
+  when: manual

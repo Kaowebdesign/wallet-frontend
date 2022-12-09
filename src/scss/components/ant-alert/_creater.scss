@@ -1,0 +1,115 @@
+@import "../parentComponent/creator";
+
+@import "vars";
+@import "maker";
+
+.exampleClass{
+  @include SetConfig($example_config);
+}
+
+.ant-message {
+  margin-top: 70px;
+}
+
+.c-alert {
+  .ant-message-success {
+    display: flex;
+  }
+
+  &__header {
+    margin-bottom: 4px;
+  }
+
+  .ant-message-notice-content {
+    padding: 16px 26px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+
+    svg {
+      margin-top: 3px;
+    }
+
+    span {
+      margin-left: 14px;
+      text-align: left;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 6px;
+
+    }
+  }
+
+  &_success {
+    .ant-message-notice-content:before {
+      background-color: #52C41A;
+    }
+  }
+
+  &_info {
+    .ant-message-notice-content:before {
+      background-color: #554CC2;
+    }
+  }
+
+  &_warning {
+    .ant-message-notice-content:before {
+      background-color: #FAAD14;
+    }
+  }
+
+  &_error {
+    .ant-message-notice-content:before {
+      background-color: #D23E50;
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .c-alert {
+    .ant-message-notice-content {
+      width: 95%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .c-alert {
+    .ant-message-notice-content {
+      width: 516px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .c-alert {
+    .ant-message-notice-content {
+      width: 516px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .c-alert {
+    .ant-message-notice-content {
+      width: 516px;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .c-alert {
+    .ant-message-notice-content {
+      width: 516px;
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .c-alert {
+    .ant-message-notice-content {
+      width: 516px;
+    }
+  }
+}

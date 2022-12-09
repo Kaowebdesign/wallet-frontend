@@ -1,0 +1,6 @@
+export {default as HeadArea} from './head-area/HeadArea'
+export {default as CointyBlock} from './cointy-block/CointyBlock'
+export {default as MultiCoin} from './multi-coin/MultiCoin'
+export {default as Secure} from './secure/Secure'
+export {default as Receive} from './receive/Receive'
+export {default as Device} from './device/Device'
